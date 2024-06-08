@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    }
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Inter';
+    }
+    :root{
+      --Green: hsl(75, 94%, 50%);
+      --White: hsl(0, 0%, 90%);
+      --Grey: hsl(0, 0%, 20%);
+      --Dark-Grey: hsl(0, 0%, 12%);
+      --Off-Black: hsl(0, 0%, 8%);
+
+      --f-w-2: 200;
+      --f-w-3: 300;
+      --f-w-4: 400;
+      --f-w-6: 600;
+      --f-w-7: 700;
+    }
+    h1{
+      color: var(--White);
+      font-size: 26px;
+      text-align: center;
+      padding-top: 0.7rem;
+      font-weight: var(--f-w-6);
+    }
+    h2{
+      font-size: 14px;
+      color: var(--Green);
+      text-align: center;
+      padding: 0.5rem 0;
+      font-weight: var(--f-w-6);
+
+    }
+    p{
+      color: var(--White);
+      font-size: 14px;
+      font-weight: var(--f-w-2);
+
+    }
+
+    main{
+      min-height: 100vh;
+      background-color: var(--Off-Black);
+      display: grid;
+      place-content: center;
+      padding: 20vh 0;
+
+      .card-links{
+        background-color: var(--Dark-Grey);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 40px 0;
+        border-radius: 10px;
+
+        img{
+          border-radius: 50%;
+          width: 90px;
+        }
+        .card-links_description{
+          padding: 1.5rem 0;
+        }
+
+        .card-links_buttons{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          width: 100%;
+          padding: 0 50px;
+          
+          button{
+            background-color: var(--Grey);
+            width: 100%;
+            padding: 15px 90px;
+            border: none;
+            border-radius: 5px;
+            a{
+              color: var(--White);
+              text-decoration: none;
+
+            }
+          }
+        }
+
+      }
+
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card-links">
+      <div class="card-links_img">
+        <figure>
+          <img src="assets/images/avatar-jessica.jpeg" alt=""/>
+        </figure>
+      </div>
+      <div class="card-links_header">
+        <h1>Jessica Randall</h1>
+        <h2>London, United Kingdom</h2>
+      </div>
+      <div class="card-links_description">
+        <p>"Front-end developer and avid reader."</p>
+      </div>
+      <div class="card-links_buttons">
+        <button><a href="">GitHub</a></button>
+        <button><a href="">Frontend Mentor</a></button>
+        <button><a href="">LinkedIn</a></button>
+        <button><a href="">Twitter</a></button>
+        <button><a href="">Instagram</a></button>
+      </div>
+
+    </div>
+  </main>
+
+  
+  
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://johnp.com.br">John Pereira</a>.
+  </div>
+</body>
+</html>
